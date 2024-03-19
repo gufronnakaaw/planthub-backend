@@ -4,7 +4,6 @@ import { JwtModule } from '@nestjs/jwt';
 import { AppController } from './app.controller';
 import { AuthModule } from './auth/auth.module';
 import { BannersModule } from './banners/banners.module';
-import { AdminModule } from './admin/admin.module';
 
 @Module({
   imports: [
@@ -16,7 +15,6 @@ import { AdminModule } from './admin/admin.module';
     }),
     AuthModule,
     BannersModule,
-    AdminModule,
   ],
   controllers: [AppController],
   providers: [],
