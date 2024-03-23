@@ -1,11 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
-import { AdminModule } from './admin/admin.module';
 import { AppController } from './app.controller';
 import { AuthModule } from './auth/auth.module';
 import { BannersModule } from './banners/banners.module';
-import { CategoriesModule } from './categories/categories.module';
 
 @Module({
   imports: [
@@ -17,8 +15,6 @@ import { CategoriesModule } from './categories/categories.module';
     }),
     AuthModule,
     BannersModule,
-    AdminModule,
-    CategoriesModule,
   ],
   controllers: [AppController],
   providers: [],
