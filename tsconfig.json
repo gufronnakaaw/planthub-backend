@@ -6,7 +6,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ESNext",
+    "target": "ES2021",
     "sourceMap": true,
     "outDir": "./build",
     "baseUrl": "./",
@@ -16,8 +16,6 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "lib": ["ESNext"],
-    "moduleResolution": "Node"
+    "noFallthroughCasesInSwitch": false
   }
 }
