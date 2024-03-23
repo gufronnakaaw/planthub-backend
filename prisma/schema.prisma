@@ -62,8 +62,8 @@ model Address {
 
 model Category {
   id              String      @id @default(uuid())
+  name            String      @db.VarChar(255)
   created_at      DateTime    @default(now())
-  updated_at      DateTime    @updatedAt
 
   @@map("categories")
 }
@@ -85,4 +85,16 @@ model Logistic {
   updated_at      DateTime    @updatedAt
 
   @@map("logistics")
+}
+
+model Admin {
+  id              String      @id @default(uuid())
+  name            String      @db.VarChar(255)
+  email           String      @db.VarChar(255)
+  password        String      @db.VarChar(255)
+  picture         String      @db.VarChar(255)  @default("https://res.cloudinary.com/dgtuasua8/image/upload/v1710513433/users/default.png")
+  created_at      DateTime    @default(now())
+  updated_at      DateTime    @updatedAt
+
+  @@map("admin")
 }
