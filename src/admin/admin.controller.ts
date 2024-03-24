@@ -61,7 +61,7 @@ export class AdminController {
 
       return {
         success: true,
-        status_code: HttpStatus.OK,
+        status_code: HttpStatus.CREATED,
         message: 'Register admin successfully',
       };
     } catch (error) {
