@@ -19,12 +19,14 @@ Status Code : 200
     {
       "id": "testing id",
       "url": "testing url",
-      "alt": "testing alt"
+      "alt": "testing alt",
+      "created_at": "testing created_at"
     },
     {
       "id": "testing id",
       "url": "testing url",
-      "alt": "testing alt"
+      "alt": "testing alt",
+      "created_at": "testing created_at"
     }
   ]
 }
