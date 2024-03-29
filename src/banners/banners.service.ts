@@ -6,13 +6,7 @@ export class BannersService {
   constructor(private prismaService: PrismaService) {}
 
   getBanners() {
-    return this.prismaService.banner.findMany({
-      select: {
-        id: true,
-        url: true,
-        alt: true,
-      },
-    });
+    return this.prismaService.banner.findMany();
   }
 
   async createBanner(params: { id: string; url: string; alt: string }) {
