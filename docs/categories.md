@@ -22,11 +22,13 @@ Status Code : 200
   "data": [
     {
       "id": "testing id",
-      "name": "testing name"
+      "name": "testing name",
+      "created_at": "testing created_at"
     },
     {
       "id": "testing id",
-      "name": "testing name"
+      "name": "testing name",
+      "created_at": "testing created_at"
     }
   ]
 }
