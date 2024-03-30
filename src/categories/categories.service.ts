@@ -11,12 +11,7 @@ export class CategoriesService {
   constructor(private prismaService: PrismaService) {}
 
   getCategories() {
-    return this.prismaService.category.findMany({
-      select: {
-        id: true,
-        name: true,
-      },
-    });
+    return this.prismaService.category.findMany();
   }
 
   async createCategories({ name }: CreateCategoriesDto) {
