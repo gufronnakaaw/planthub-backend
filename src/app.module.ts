@@ -6,6 +6,7 @@ import { AppController } from './app.controller';
 import { AuthModule } from './auth/auth.module';
 import { BannersModule } from './banners/banners.module';
 import { CategoriesModule } from './categories/categories.module';
+import { StatusModule } from './status/status.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { CategoriesModule } from './categories/categories.module';
     BannersModule,
     AdminModule,
     CategoriesModule,
+    StatusModule,
   ],
   controllers: [AppController],
   providers: [],
